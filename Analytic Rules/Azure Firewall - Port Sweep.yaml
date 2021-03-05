@@ -1,7 +1,12 @@
 id: <Needs Input>
 name: Port Sweep
 description: |
-  'Identifies a source IP scanning same open ports on the Azure Firewall IPs. This can indicate malicious scanning of port by an attacker, trying to reveal IPs with specific ports open in the organization. The ports can be compromised by attackers for initial access, most often by exploiting vulnerability.\n\nConfigurable Parameters:\n- Port sweep time - the time range to look for multiple hosts scanned. Default is set to 30 seconds.\n- Minimum different hosts threshold - alert only if more than this number of hosts scanned. Default is set to 200.'
+  'Identifies a source IP scanning same open ports on the Azure Firewall IPs. This can indicate malicious scanning of port by an attacker, trying to reveal IPs with specific ports open in the organization. The ports can be compromised by attackers for initial access, most often by exploiting vulnerability.
+  
+  Configurable Parameters:
+  
+  - Port sweep time - the time range to look for multiple hosts scanned. Default is set to 30 seconds.
+  - Minimum different hosts threshold - alert only if more than this number of hosts scanned. Default is set to 200.'
 severity: Medium
 requiredDataConnectors:
   - connectorId: AzureFirewall

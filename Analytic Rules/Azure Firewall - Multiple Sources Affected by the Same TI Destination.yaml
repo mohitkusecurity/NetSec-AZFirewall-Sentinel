@@ -1,7 +1,11 @@
 id: <Needs Input>
 name: Multiple Sources Affected by the Same TI Destination
 description: |
-  'Identifies multiple machines trying to reach out to the same destination blocked by TI in Azure Firewall. This can indicate attack on the organization by the same attack group.\n\nConfigurable Parameters:\n- Minimum affected threshold - alert only if more than this number of hosts affected. Default is set to 5.'
+  'Identifies multiple machines trying to reach out to the same destination blocked by TI in Azure Firewall. This can indicate attack on the organization by the same attack group.
+  
+  Configurable Parameters:
+  
+  - Minimum affected threshold - alert only if more than this number of hosts affected. Default is set to 5.'
 severity: Medium
 requiredDataConnectors:
   - connectorId: AzureFirewall
