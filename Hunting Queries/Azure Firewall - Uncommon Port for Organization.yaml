@@ -31,12 +31,3 @@ let TrafficLogs = (AzureDiagnostics
 | join kind=leftantisemi (LearningSrcIp) on dstport 
 | where dstport !in (AllowedCommonPorts)
 | extend IPCustomEntity = srcip, URLCustomEntity = dsturl
-entityMappings:
-  - entityType: IP
-    fieldMappings:
-      - identifier: Address
-        columnName: IPCustomEntity
-  - entityType: URL
-    fieldMappings:
-      - identifier: Url
-        columnName: URLCustomEntity

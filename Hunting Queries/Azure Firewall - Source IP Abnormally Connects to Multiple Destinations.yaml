@@ -39,12 +39,3 @@ AlertTimeSrcIp
 | where AlertTimeSrcIpdCount > LreaningThreshold
 | project-away srcip1, LearningTimeSrcAvg, LearningTimeSrcStd
 | extend IPCustomEntity = srcip, URLCustomEntity = dsturl
-entityMappings:
-  - entityType: IP
-    fieldMappings:
-      - identifier: Address
-        columnName: IPCustomEntity
-  - entityType: URL
-    fieldMappings:
-      - identifier: Url
-        columnName: URLCustomEntity
